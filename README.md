@@ -11,20 +11,18 @@ Welcome to *GROW* GitHub repository! This project aims to support farmers, parti
 
 ## Features:
 
-- **`AI-based Plant Disease Detection/`**: Use image recognition and AI to identify plant diseases early.
-- **`Planting Recommendation/`**: Provide recommendations about the most suitable plants based on weather forecasts and soil conditions.
-- **`Real-time Chatbot Assistance/`**: Offer 24/7 support to answer farmers' questions and provide guidance.
-- **`Simplified and User-friendly Interface/`**: Grow's interface is designed to be intuitive, making it easy for farmers to use the app and access its features.
-- **`Real-time Internet Search Integration/`**: The chatbot can perform real-time internet searches to provide updated information and recommendations, ensuring farmers receive the most current advice.
-- **`Versatile Use Cases/`**: The AI models in Grow support various functions, from disease detection and planting recommendations to real-time assistance, making it a versatile tool for farmers.
+- **`AI-based Plant Disease Detection`**: Use image recognition and AI to identify plant diseases early.
+- **`Planting Recommendation`**: Provide recommendations about the most suitable plants based on weather forecasts and soil conditions.
+- **`Real-time Chatbot Assistance`**: Offer 24/7 support to answer farmers' questions and provide guidance.
+- **`Simplified and User-friendly Interface`**: Grow's interface is designed to be intuitive, making it easy for farmers to use the app and access its features.
 
 
-## Purpose:
+## Purpose :
 
 The purpose of this repository is to provide a collaborative space for the development and improvement of *GROW* app. 
 
 
-### How AI Models Power Grow
+## How AI Models Power Grow : 
 
 *Grow* leverages advanced AI models to provide crucial support for farmers in Africa through its three main features: AI-based plant disease detection, planting recommendations, and real-time chatbot assistance. Here's how the AI models power Grow:
 
