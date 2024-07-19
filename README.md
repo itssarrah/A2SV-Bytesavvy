@@ -1,6 +1,8 @@
 
-AI-Powered Agriculture App
-Overview
+** AI-Powered Agriculture App  **
+*GROW*
+
+***Overview***
 This project aims to support farmers, particularly in Africa, by leveraging AI to provide early plant disease detection, plant recommendation, and real-time chatbot assistance. Our solution helps improve crop yields, mitigate agricultural losses, and enhance food security.
 
 Features
