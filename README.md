@@ -1,8 +1,7 @@
+*GROW*
 
 *AI-Powered Agriculture App*
 
-
-*GROW*
 
 *Overview :*
 
