@@ -1,14 +1,8 @@
-import 'package:agri/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-
-void main() {
-  runApp(MaterialApp(
-    home: Scaffold(
-      body: Sidebar(),
-    ),
-  ));
-}
+import 'package:provider/provider.dart';
+import '../sidebar_state.dart';
+import '../colors.dart';  
 
 class Sidebar extends StatefulWidget {
   @override
@@ -26,6 +20,8 @@ class _SidebarState extends State<Sidebar> {
 
   @override
   Widget build(BuildContext context) {
+    final sidebarState = Provider.of<SidebarState>(context);
+
     return Stack(
       children: [
         Container(
@@ -35,13 +31,36 @@ class _SidebarState extends State<Sidebar> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(height: 250),
-              SidebarItem(text: 'Disease', onTap: () => _moveArc(220.0)),
+              SidebarItem(
+                text: 'Disease',
+                onTap: () {
+                  sidebarState.selectIndex(0);
+                  _moveArc(220.0);
+                },
+              ),
               SizedBox(height: 100),
-              SidebarItem(text: 'Chat bot', onTap: () => _moveArc(350.0)),
+              SidebarItem(
+                text: 'Chat bot',
+                onTap: () {
+                  sidebarState.selectIndex(1);
+                  _moveArc(350.0);
+                },
+              ),
               SizedBox(height: 100),
-              SidebarItem(text: 'Plantable', onTap: () => _moveArc(220.0)),
+              SidebarItem(
+                text: 'Plantable',
+                onTap: () {
+                  sidebarState.selectIndex(2);
+                  _moveArc(220.0);
+                },
+              ),
               Spacer(),
-              CupertinoChatButton(onPressed: () => _moveArc(350.0)),
+              CupertinoChatButton(
+                onPressed: () {
+                  sidebarState.selectIndex(1);
+                  _moveArc(350.0);
+                },
+              ),
               SizedBox(height: 20),
             ],
           ),

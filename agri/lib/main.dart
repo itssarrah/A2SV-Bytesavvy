@@ -1,9 +1,17 @@
-import 'package:agri/widgets/side_bar.dart';
+import 'package:agri/screens/chatbot.dart';
 import 'package:flutter/material.dart';
-import 'screens/plant_list_screen.dart';
+import 'package:provider/provider.dart';
+import 'sidebar_state.dart';
+import 'widgets/side_bar.dart';  
+import 'screens/plant_list_screen.dart';  
 
 void main() {
-  runApp(MyApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (context) => SidebarState(),
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -22,15 +30,30 @@ class MyApp extends StatelessWidget {
 class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final sidebarState = Provider.of<SidebarState>(context);
+
     return Scaffold(
       body: Row(
         children: [
           Sidebar(),
           Expanded(
-            child: PlantListScreen(),
+            child: _getSelectedScreen(sidebarState.selectedIndex),
           ),
         ],
       ),
     );
+  }
+
+  Widget _getSelectedScreen(int index) {
+    switch (index) {
+      case 0:
+        return PlantListScreen();
+      case 1:
+        return BouncingColumn();
+      case 2:
+        return PlantListScreen();
+      default:
+        return PlantListScreen();
+    }
   }
 }
