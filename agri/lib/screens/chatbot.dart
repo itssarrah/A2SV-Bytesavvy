@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:lottie/lottie.dart';
-
+import '../screens/chatbotScreen.dart';
 class BouncingColumn extends StatefulWidget {
   @override
   _BouncingColumnState createState() => _BouncingColumnState();
@@ -53,7 +53,12 @@ class _BouncingColumnState extends State<BouncingColumn> with SingleTickerProvid
             SizedBox(height: 20),
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ChatbotScreen()),
+                );
+              },
               child: Text('Chat', style: TextStyle(color: Colors.green)), 
             ),
           ],
