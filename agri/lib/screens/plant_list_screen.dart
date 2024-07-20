@@ -41,7 +41,7 @@ class PlantListScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "Fruits",
+                        "please Choose the type of fruit you want to scan",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.grey,
@@ -49,7 +49,7 @@ class PlantListScreen extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        "Plants",
+                        "Fruits",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.black,
